@@ -6,11 +6,19 @@
     <string name="name_hint">Your Name</string>
     <string name="enter_name_warning">Please enter your name!</string>
     <string name="welcome">Welcome</string>
-    <string name="welcome_text">There are 4 multiple choice questions out of 8 in this quiz and each of the questions worth 10 points. Good Luck!</string>
+    <string name="welcome_text">These are the first 4 multiple choice questions out of 8 in this quiz and each of the questions worth 10 points. Good Luck!</string>
     <string name="welcome_text2">These are the last 4 gap-filling questions in this quiz and each of the questions worth 10 points. Good Luck!</string>
-    <string name="current_score">Your current score is <xliff:g id="points" example="40">%d</xliff:g> points!</string>
+    <string name="current_score">Your current score is <xliff:g example="40" id="points">%d</xliff:g> points!</string>
     <string name="cont">Continue</string>
     <string name="question1">Question 1:</string>
+    <string name="question1_warning">Please select an option from Question 1!</string>
+    <string name="question2_warning">Please select an option from Question 2!</string>
+    <string name="question3_warning">Please select an option from Question 3!</string>
+    <string name="question4_warning">Please select an option from Question 4!</string>
+    <string name="question5_warning">Please answer Question 5!</string>
+    <string name="question6_warning">Please answer Question 6!</string>
+    <string name="question7_warning">Please answer Question 7!</string>
+    <string name="question8_warning">Please answer Question 8!</string>
     <string name="question2">Question 2:</string>
     <string name="question3">Question 3:</string>
     <string name="question4">Question 4:</string>
@@ -25,7 +33,10 @@
     <string name="question6_answer">Asia</string>
     <string name="question7_answer">South America</string>
     <string name="question8_answer">Europe</string>
-    <string name="button_quiz2">Submit</string>
+    <string name="check_button">Check</string>
+    <string name="not_checked_question">You have to check all of the questions above first!</string>
+    <string name="submit_button">Submit</string>
+    <string name="reset_button">Reset</string>
     <string name="option_a">Uruguay</string>
     <string name="option_b">Cambodia</string>
     <string name="option_c">Turkey</string>
@@ -33,6 +44,6 @@
     <string name="correct">Correct! Current Score:</string>
     <string name="incorrect">Incorrect! Current Score:</string>
     <string name="next_quiz">Next Quiz</string>
-    <string name="congratulations">Congratulations <xliff:g id="name" example="Amy">%s</xliff:g>! You have answered <xliff:g id="quantity" example="8">%d</xliff:g> questions correctly and won <xliff:g id="points" example="40">%d</xliff:g> points total! \nLet\'s recap answers below ;) </string>
+    <string name="congratulations">Congratulations <xliff:g example="Amy" id="name">%s</xliff:g>! You have answered <xliff:g example="8" id="quantity">%d</xliff:g> questions correctly and won <xliff:g example="40" id="points">%d</xliff:g> points total! \nLet\'s recap answers below ;) </string>
 
 </resources>

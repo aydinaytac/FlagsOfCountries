@@ -16,8 +16,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/congratulations"
-            android:textSize="30sp"
-            android:textColor="@android:color/background_dark"/>
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -48,11 +48,11 @@
             android:textSize="18sp" />
 
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/option_c"
-                android:textSize="18sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_c"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -83,11 +83,11 @@
             android:textSize="18sp" />
 
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/option_d"
-                android:textSize="18sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_d"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -117,11 +117,11 @@
             android:text="@string/question_text"
             android:textSize="18sp" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/option_b"
-                android:textSize="18sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_b"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -151,11 +151,11 @@
             android:text="@string/question_text"
             android:textSize="18sp" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/option_a"
-                android:textSize="18sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_a"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -189,9 +189,9 @@
             android:id="@+id/question5_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/question5_answer"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:hint="@string/question5_answer"
             android:inputType="textCapWords" />
 
         <TextView
@@ -221,14 +221,16 @@
             android:maxLines="2"
             android:text="@string/question_text2"
             android:textSize="18sp" />
+
         <EditText
             android:id="@+id/question6_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/question6_answer"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:hint="@string/question6_answer"
             android:inputType="textCapWords" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -261,10 +263,11 @@
             android:id="@+id/question7_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/question7_answer"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:hint="@string/question7_answer"
             android:inputType="textCapWords" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -297,9 +300,9 @@
             android:id="@+id/question8_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/question8_answer"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:hint="@string/question8_answer"
             android:inputType="textCapWords" />
     </LinearLayout>
 </ScrollView>

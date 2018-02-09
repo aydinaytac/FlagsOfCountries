@@ -38,6 +38,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
+            android:id="@+id/q1_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -47,33 +48,33 @@
                 android:id="@+id/q1OptA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick1"
                 android:text="@string/option_a"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick1"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q1OptB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick1"
                 android:text="@string/option_b"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick1"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q1OptC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick1"
                 android:text="@string/option_c"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick1"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q1OptD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick1"
                 android:text="@string/option_d"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick1"/>
+                android:textSize="18sp" />
         </RadioGroup>
 
         <TextView
@@ -105,6 +106,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
+            android:id="@+id/q2_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -114,33 +116,33 @@
                 android:id="@+id/q2OptA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick2"
                 android:text="@string/option_a"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick2"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q2OptB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick2"
                 android:text="@string/option_b"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick2"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q2OptC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick2"
                 android:text="@string/option_c"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick2"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q2OptD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick2"
                 android:text="@string/option_d"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick2"/>
+                android:textSize="18sp" />
         </RadioGroup>
 
         <TextView
@@ -172,6 +174,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
+            android:id="@+id/q3_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -181,33 +184,33 @@
                 android:id="@+id/q3OptA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick3"
                 android:text="@string/option_a"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick3"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q3OptB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick3"
                 android:text="@string/option_b"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick3"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q3OptC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick3"
                 android:text="@string/option_c"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick3"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q3OptD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick3"
                 android:text="@string/option_d"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick3"/>
+                android:textSize="18sp" />
         </RadioGroup>
 
         <TextView
@@ -239,6 +242,7 @@
             android:textSize="18sp" />
 
         <RadioGroup
+            android:id="@+id/q4_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -248,42 +252,42 @@
                 android:id="@+id/q4OptA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick4"
                 android:text="@string/option_a"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick4"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q4OptB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick4"
                 android:text="@string/option_b"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick4"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q4OptC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick4"
                 android:text="@string/option_c"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick4"/>
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/q4OptD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="radioButtonOnClick4"
                 android:text="@string/option_d"
-                android:textSize="18sp"
-                android:onClick="radioButtonOnClick4"/>
+                android:textSize="18sp" />
         </RadioGroup>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next_quiz"
             android:layout_gravity="center_horizontal"
             android:layout_margin="16dp"
-            android:onClick="nextQuestionButton"/>
+            android:onClick="nextQuestionButton"
+            android:text="@string/next_quiz" />
 
     </LinearLayout>
 
