@@ -6,11 +6,19 @@
     <string name="name_hint">Your Name</string>
     <string name="enter_name_warning">Please enter your name!</string>
     <string name="welcome">Welcome</string>
-    <string name="welcome_text">These are the first 4 multiple choice questions out of 8 in this quiz and each of the questions worth 10 points. Good Luck!</string>
-    <string name="welcome_text2">These are the last 4 gap-filling questions in this quiz and each of the questions worth 10 points. Good Luck!</string>
+    <string name="welcome_text">These are the first 4 out of 9 in this quiz and each of the questions worth 10 points. Good Luck!</string>
+    <string name="welcome_text2">These are the last 5 questions and in this quiz and each of the questions worth 10 points. Good Luck!</string>
     <string name="current_score">Your current score is <xliff:g example="40" id="points">%d</xliff:g> points!</string>
     <string name="cont">Continue</string>
     <string name="question1">Question 1:</string>
+    <string name="question2">Question 2:</string>
+    <string name="question3">Question 3:</string>
+    <string name="question4">Question 4:</string>
+    <string name="question5">Question 5:</string>
+    <string name="question6">Question 6:</string>
+    <string name="question7">Question 7:</string>
+    <string name="question8">Question 8:</string>
+    <string name="question9">Question 9:</string>
     <string name="question1_warning">Please select an option from Question 1!</string>
     <string name="question2_warning">Please select an option from Question 2!</string>
     <string name="question3_warning">Please select an option from Question 3!</string>
@@ -19,15 +27,11 @@
     <string name="question6_warning">Please answer Question 6!</string>
     <string name="question7_warning">Please answer Question 7!</string>
     <string name="question8_warning">Please answer Question 8!</string>
-    <string name="question2">Question 2:</string>
-    <string name="question3">Question 3:</string>
-    <string name="question4">Question 4:</string>
-    <string name="question5">Question 5:</string>
-    <string name="question6">Question 6:</string>
-    <string name="question7">Question 7:</string>
-    <string name="question8">Question 8:</string>
     <string name="question_text">Do you know which country\'s flag is this?</string>
     <string name="question_text2">Do you know which continent this country is in?</string>
+    <string name="question_text3">Which options are true about Turkish flag?</string>
+    <string name="checkbox1">The origins of the Turkish flag are rooted in ancient Turkic culture. 1500 years old Göktürk coins include crescents and stars.</string>
+    <string name="checkbox2">The colour represents the bloodshed, it represents the fight of our heroes, martyr who fought to defend this country, every inch of it.</string>
     <string name="continent">Continent</string>
     <string name="question5_answer">Africa</string>
     <string name="question6_answer">Asia</string>
@@ -35,8 +39,8 @@
     <string name="question8_answer">Europe</string>
     <string name="check_button">Check</string>
     <string name="not_checked_question">You have to check all of the questions above first!</string>
-    <string name="submit_button">Submit</string>
-    <string name="reset_button">Reset</string>
+    <string name="finish_button">Finish</string>
+    <string name="solution_button">Solution</string>
     <string name="option_a">Uruguay</string>
     <string name="option_b">Cambodia</string>
     <string name="option_c">Turkey</string>
@@ -44,6 +48,7 @@
     <string name="correct">Correct! Current Score:</string>
     <string name="incorrect">Incorrect! Current Score:</string>
     <string name="next_quiz">Next Quiz</string>
-    <string name="congratulations">Congratulations <xliff:g example="Amy" id="name">%s</xliff:g>! You have answered <xliff:g example="8" id="quantity">%d</xliff:g> questions correctly and won <xliff:g example="40" id="points">%d</xliff:g> points total! \nLet\'s recap answers below ;) </string>
+    <string name="congratulations">Congratulations <xliff:g example="Aydın" id="name">%s</xliff:g>! You have answered <xliff:g example="9" id="quantity">%d</xliff:g> questions correctly and won <xliff:g example="90" id="points">%d</xliff:g> points total!</string>
+    <string name="solution">Solution</string>
 
 </resources>

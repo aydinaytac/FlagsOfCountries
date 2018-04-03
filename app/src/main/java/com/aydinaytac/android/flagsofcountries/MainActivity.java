@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
             // And now quiz activity starts ;)
             Intent quizIntent = new Intent(this, QuizActivity.class);
             startActivity(quizIntent);
+
+            //Resetting the score 0 again, if the user didn't quit and clicks back button ;)
+            score = 0;
         }
     }
 }

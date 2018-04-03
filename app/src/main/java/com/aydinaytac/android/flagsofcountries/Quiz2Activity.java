@@ -6,20 +6,22 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**
  * Created by @aydinaytac on 6.02.2018.
+ * Edited by @aydinaytac on 3.04.2018
  */
 
 public class Quiz2Activity extends AppCompatActivity {
 
-    int q5Checked = 0;
-    int q6Checked = 0;
-    int q7Checked = 0;
-    int q8Checked = 0;
+    int q5Checked;
+    int q6Checked;
+    int q7Checked;
+    int q8Checked;
+    int q9Checked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,10 +60,12 @@ public class Quiz2Activity extends AppCompatActivity {
             Toast.makeText(this, R.string.question5_warning, Toast.LENGTH_SHORT).show();
         } else if (answerQuestion5.equals(getString(R.string.question5_answer))) {
             q5Checked = 1;
+            answerQ5EditText.setEnabled(false);
             MainActivity.increaseScore();
             Toast.makeText(this, getString(R.string.correct) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
         } else {
             q5Checked = 1;
+            answerQ5EditText.setEnabled(false);
             // Answer is wrong
             Toast.makeText(this, getString(R.string.incorrect) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
         }
@@ -87,10 +91,12 @@ public class Quiz2Activity extends AppCompatActivity {
             Toast.makeText(this, R.string.question6_warning, Toast.LENGTH_SHORT).show();
         } else if (answerQuestion6.equals(getString(R.string.question6_answer))) {
             q6Checked = 1;
+            answerQ6EditText.setEnabled(false);
             MainActivity.increaseScore();
             Toast.makeText(this, getString(R.string.correct) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
         } else {
             q6Checked = 1;
+            answerQ6EditText.setEnabled(false);
             // Answer is wrong
             Toast.makeText(this, getString(R.string.incorrect) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
         }
@@ -116,10 +122,12 @@ public class Quiz2Activity extends AppCompatActivity {
             Toast.makeText(this, R.string.question7_warning, Toast.LENGTH_SHORT).show();
         } else if (answerQuestion7.equals(getString(R.string.question7_answer))) {
             q7Checked = 1;
+            answerQ7EditText.setEnabled(false);
             MainActivity.increaseScore();
             Toast.makeText(this, getString(R.string.correct) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
         } else {
             q7Checked = 1;
+            answerQ7EditText.setEnabled(false);
             // Answer is wrong
             Toast.makeText(this, getString(R.string.incorrect) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
         }
@@ -157,35 +165,67 @@ public class Quiz2Activity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when submit button is pressed.
+     * This method controls the answers of Question 9 checkboxes
      *
      * @param v
      */
-    public void submitButton(View v) {
+    public void q9checkbox(View v) {
 
-        int checkedAll = q5Checked + q6Checked + q7Checked + q8Checked;
+        Button q9CheckButton = findViewById(R.id.question9_check_button);
+        q9CheckButton.setEnabled(false);
 
-        if (checkedAll == 4) {
-            //Layout changed to solution after completion
-            setContentView(R.layout.solution);
+        CheckBox checkbox1 = findViewById(R.id.checkbox1);
+        CheckBox checkbox2 = findViewById(R.id.checkbox2);
+
+        if (checkbox1.isChecked() && checkbox2.isChecked()) {
+            q9Checked = 1;
+            MainActivity.increaseScore();
+            checkbox1.setEnabled(false);
+            checkbox2.setEnabled(false);
+            Toast.makeText(this, getString(R.string.correct) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
+        } else {
+            q9Checked = 1;
+            checkbox1.setEnabled(false);
+            checkbox2.setEnabled(false);
+            Toast.makeText(this, getString(R.string.incorrect) + " " + MainActivity.getScore(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    /**
+     * This method is called when finish button is pressed.
+     *
+     * @param v
+     */
+    public void finishButton(View v) {
+
+        int checkedAll = q5Checked + q6Checked + q7Checked + q8Checked + q9Checked;
+
+        if (checkedAll == 5) {
+            // calculating the number of correct answers
+            int numberOfCorrectAnswers = MainActivity.getScore() / 10;
 
             //EnfOfQuiz message includes the name of the user and the amount of correct answers
-            TextView endOfMessage = findViewById(R.id.solution_endof_message);
-            String endOfMessageText = getString(R.string.congratulations, MainActivity.getPlayerName(), endOfQuizSummaryMessage(), MainActivity.getScore());
-            endOfMessage.setText(endOfMessageText);
+            String endOfMessageText = getString(R.string.congratulations, MainActivity.getPlayerName(), numberOfCorrectAnswers, MainActivity.getScore());
+            Toast.makeText(this, endOfMessageText, Toast.LENGTH_LONG).show();
 
-        } else if (checkedAll < 4) {
+            //Enabling the solution button
+            Button solutionButton = findViewById(R.id.solution_button);
+            solutionButton.setEnabled(true);
+
+        } else if (checkedAll < 5) {
             Toast.makeText(this, getString(R.string.not_checked_question), Toast.LENGTH_SHORT).show();
         }
     }
 
     /**
-     * This method calculates how much questions do the user answered correctly.
+     * This method is called when solution button is pressed.
      *
-     * @return numberOfCorrectAnswers
+     * @param v
      */
-    public int endOfQuizSummaryMessage() {
-        int numberOfCorrectAnswers = MainActivity.getScore() / 10;
-        return numberOfCorrectAnswers;
+    public void solutionButton(View v) {
+
+        //Layout changed to solution after completion
+        setContentView(R.layout.solution);
+
     }
 }

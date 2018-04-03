@@ -12,17 +12,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
             android:text="@string/question1"
             android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp18"
             android:textStyle="bold" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/dp16"
             android:adjustViewBounds="true"
             android:src="@drawable/tr" />
 
@@ -30,19 +30,19 @@
             style="@style/AppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
             android:maxLines="2"
             android:text="@string/question_text"
-            android:textSize="18sp" />
+            android:textSize="@dimen/sp18" />
 
         <RadioGroup
             android:id="@+id/q1_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16">
 
             <RadioButton
                 android:id="@+id/q1OptA"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick1"
                 android:text="@string/option_a"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q1OptB"
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick1"
                 android:text="@string/option_b"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q1OptC"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick1"
                 android:text="@string/option_c"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q1OptD"
@@ -74,23 +74,23 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick1"
                 android:text="@string/option_d"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
             android:text="@string/question2"
             android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp18"
             android:textStyle="bold" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/dp16"
             android:adjustViewBounds="true"
             android:src="@drawable/et" />
 
@@ -98,19 +98,19 @@
             style="@style/AppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
             android:maxLines="2"
             android:text="@string/question_text"
-            android:textSize="18sp" />
+            android:textSize="@dimen/sp18" />
 
         <RadioGroup
             android:id="@+id/q2_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16">
 
             <RadioButton
                 android:id="@+id/q2OptA"
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick2"
                 android:text="@string/option_a"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q2OptB"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick2"
                 android:text="@string/option_b"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q2OptC"
@@ -134,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick2"
                 android:text="@string/option_c"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q2OptD"
@@ -142,23 +142,23 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick2"
                 android:text="@string/option_d"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
             android:text="@string/question3"
             android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp18"
             android:textStyle="bold" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/dp16"
             android:adjustViewBounds="true"
             android:src="@drawable/kh" />
 
@@ -166,19 +166,19 @@
             style="@style/AppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
             android:maxLines="2"
             android:text="@string/question_text"
-            android:textSize="18sp" />
+            android:textSize="@dimen/sp18" />
 
         <RadioGroup
             android:id="@+id/q3_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16">
 
             <RadioButton
                 android:id="@+id/q3OptA"
@@ -186,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick3"
                 android:text="@string/option_a"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q3OptB"
@@ -194,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick3"
                 android:text="@string/option_b"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q3OptC"
@@ -202,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick3"
                 android:text="@string/option_c"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q3OptD"
@@ -210,23 +210,23 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick3"
                 android:text="@string/option_d"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
             android:text="@string/question4"
             android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp18"
             android:textStyle="bold" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/dp16"
             android:adjustViewBounds="true"
             android:src="@drawable/uy" />
 
@@ -234,9 +234,9 @@
             style="@style/AppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
             android:maxLines="2"
             android:text="@string/question_text"
             android:textSize="18sp" />
@@ -245,8 +245,8 @@
             android:id="@+id/q4_radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16">
 
             <RadioButton
                 android:id="@+id/q4OptA"
@@ -254,7 +254,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick4"
                 android:text="@string/option_a"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q4OptB"
@@ -262,7 +262,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick4"
                 android:text="@string/option_b"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q4OptC"
@@ -270,7 +270,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick4"
                 android:text="@string/option_c"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
 
             <RadioButton
                 android:id="@+id/q4OptD"
@@ -278,14 +278,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonOnClick4"
                 android:text="@string/option_d"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp18" />
         </RadioGroup>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/dp16"
             android:onClick="nextQuestionButton"
             android:text="@string/next_quiz" />
 
